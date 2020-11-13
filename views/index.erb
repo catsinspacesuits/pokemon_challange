@@ -1,5 +1,5 @@
 <h1>Pokemon Challange</h1>
-<h2><%= @pokemon.name %></h2>
+<h2 style="color: red;"><strong><%= @pokemon.name.capitalize %></strong></h2>
 <!-- display english language description. -->
 <p>Description: <% @pokemon_species.flavor_text_entries.find do |text| %>
   <% if text.language.name == "en" %>
