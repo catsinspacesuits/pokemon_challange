@@ -1,0 +1,15 @@
+<h2><%= @pokemon.name %></h2>
+<!-- display english language description. -->
+<p>Description: <% @pokemon_species.flavor_text_entries.find do |text| %>
+  <% if text.language.name == "en" %>
+    <%= text.flavor_text %>
+  <% end %>
+<% end %>
+</p>
+
+<h5>Color: <%= @pokemon_species.color.name %></h5>
+<h5>Happiness: <%= @pokemon_species.base_happiness %></h5>
+<h5>Capture Rate: <%= @pokemon_species.capture_rate %></h5>
+
+<img src="https://img.pokemondb.net/artwork/large/<%= @pokemon.name %>.jpg" height="400"/>
+
