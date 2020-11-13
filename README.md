@@ -6,3 +6,4 @@ When a user visits the index page a random pokemon is displayed from the PokeAPI
 
 I used the Ruby wrapper for the API (Poke-Api-V2) as well as minitest for testing.
 
+Tests can be run using the `rake` command. To run the program just clone the repo and start the server with`shotgun config.ru` and access at `localhost:9393`
